@@ -30,8 +30,10 @@ Expected Output:
 ["555-123-4567", "555-567-8910"]
 
 */ 
- 
-let phoneReg = /write your regex here/
+
+let phoneReg = sampleApp.match(/\d{3}-\d{3}-\d{4}/g)
+console.log(phoneReg)
+
 
 /* 
 
@@ -51,8 +53,8 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
-
+let emailReg = sampleApp.match(/\w+@\w+.\w+/ig)
+console.log(emailReg)
 /* 
 
 Regular Expression 3: 
@@ -67,4 +69,5 @@ Expected Output:
 
 */ 
 
-let statusReg = /write your regex here/
+let statusReg = sampleApp.search(/status/i)
+console.log(statusReg)
